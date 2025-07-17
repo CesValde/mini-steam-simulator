@@ -1,6 +1,6 @@
 /* Imports */
-import { carrito } from '../src/miSteam.js';
-import { user }  from '../src/miSteam.js';
+import { carrito } from '../src/miSteam.js'
+import { user }  from '../src/miSteam.js'
 
 /**
  * Verifica que el usuario tenga el juego comprado. Agrega el juego llegado por parametro en caso de no estar en el carrito y actualiza el carrito de compra.
@@ -88,7 +88,11 @@ export function compraExitosa(misJuegos) {
  */
 export function inicioSesion(user) {
     if(!user) {
-        alert("Debes iniciar sesión primero");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+        });
         window.location.href = "login.html";
     }
 }
@@ -157,4 +161,21 @@ export function juegosDisponibles(juegos, misJuegos) {
             }
         });
     });
+}
+
+let timeoutID;
+export function resetTimer() {
+    clearTimeout(timeoutID);
+
+    timeoutID = setTimeout(() => {
+        localStorage.removeItem('user');
+        Swal.fire({
+            icon: 'info',
+            title: 'Sesión expirada',
+            text: 'Por inactividad, se cerró la sesión. Por favor, inicia sesión nuevamente.',
+            confirmButtonText: 'Aceptar'
+        }).then(() => {
+            window.location.href = 'login.html';
+        });
+    }, 5000); // 30 minutos
 }

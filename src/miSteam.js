@@ -1,5 +1,5 @@
 /* Simulacion de Steam */
-import { actualizarCarrito, crearCardCarrito, cerrarSesion, inicioSesion, juegosDisponibles, compraExitosa } from '../Js/functions.js';
+import { actualizarCarrito, crearCardCarrito, cerrarSesion, inicioSesion, juegosDisponibles, compraExitosa, resetTimer} from '../Js/functions.js';
 
 /* Tomamos el usuario logueado */
 export let user = localStorage.getItem("usuarioLogueado")
@@ -99,3 +99,13 @@ if(boton) {
         window.location.href = "main.html";
     });
 }
+
+resetTimer()
+
+// Eventos que indican actividad
+window.onload = resetTimer;
+window.onmousemove = resetTimer;
+window.onmousedown = resetTimer;  // clicks
+window.ontouchstart = resetTimer; // pantalla táctil
+window.onclick = resetTimer;       // clicks
+window.onscroll = resetTimer;

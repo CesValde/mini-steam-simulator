@@ -56,3 +56,21 @@ redirecciones.forEach(({ id, destino }) => {
         });
     }
 });
+
+let timeoutID;
+export function resetTimer() {
+    clearTimeout(timeoutID);
+
+    timeoutID = setTimeout(() => {
+        localStorage.removeItem('user');
+        Swal.fire({
+            icon: 'info',
+            title: 'Sesión expirada',
+            text: 'Por inactividad, se cerró la sesión. Por favor, inicia sesión nuevamente.',
+            confirmButtonText: 'Aceptar'
+        }).then(() => {
+            window.location.href = 'login.html';
+        });
+    }, 5000); // 30 minutos
+}
+resetTimer()

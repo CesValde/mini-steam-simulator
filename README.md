@@ -18,6 +18,7 @@ Este proyecto es una simulación de una plataforma similar a **Steam**, desarrol
 
 ## 📂 Estructura principal
 
+```bash
 /steam/
 │
 ├── css/         # Hojas de estilo
@@ -39,6 +40,7 @@ Este proyecto es una simulación de una plataforma similar a **Steam**, desarrol
 │ ├── main.html
 │ ├── miSteam.js
 └── README.md    # Descripción del proyecto
+```
 
 ## 🧪 Funcionalidades destacadas
 

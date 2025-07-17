@@ -1,0 +1,32 @@
+#lista-juegos {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contenedor-juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 4rem; /* espacio entre tarjetas */
+    padding: 2rem;
+    margin-top: 50px;
+}
+
+img {
+    width: 200px;       /* ancho fijo */
+    height: 250px;      /* alto fijo */
+    object-fit: cover;  /* para que la imagen se recorte y no se distorsione */
+}
+
+#cart-panel {
+    padding: 1rem;
+    text-align: center;
+    place-content: center;
+}
+
+#carrito-juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 columnas iguales */
+    gap: 4rem; /* espacio entre tarjetas */
+    padding: 2rem;
+    background-color: #202f42;
+}

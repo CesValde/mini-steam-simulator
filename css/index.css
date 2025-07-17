@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body { 
+    color: white;
+    font-family: 'Red Hat Display';
+    display: grid;
+    min-height: 100dvh;
+    background-color: #1b2838;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 0.1fr auto 0.1fr;
+}
+
+header {
+    padding: 1rem;
+    background-color: #223750;
+}
+
+.div-header {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 40rem;
+}
+
+button {
+    color:aliceblue;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.7rem;
+    background-color: #274160;
+    border-style: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button:hover {
+    color: #1b2838;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    place-content: center;
+    background-color: #223750;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,12 @@
+#lista-amigos {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contenedor-amigos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 4rem; /* espacio entre tarjetas */
+    padding: 2rem;
+    margin-top: 50px;
+}

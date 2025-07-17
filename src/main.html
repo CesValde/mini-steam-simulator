@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../css/miSteam.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title> Steam </title>
+</head>
+<body>
+    <div id="container"> 
+        <header> 
+            <div class="div-header"> 
+                <a href="#" id="boton-ir-home"> Inicio </a>
+                <a href="#" id="boton-ir-amigos"> Mis amigos </a>
+                <button id="btn-cerrar-sesion">Cerrar sesión</button>
+            </div>
+        </header>
+        <div id="lista-juegos"> 
+            <h1>Tu Tienda</h1>
+            <div class="contenedor-juegos"></div>
+        </div>
+		<aside id="cart-panel" class="cart-panel">
+			<h2> Tu carrito 🛒</h2>
+			<div id="carrito-juegos"></div>
+			<div id="total-carrito">Tu carrito esta vacio</div>
+			<button id="terminar-compra">Terminar compra</button>
+		</aside>
+        <footer> 
+            Terminos y condiciones Steam Copyright -> Steam
+            <a href="https://store.steampowered.com/"> Instalar Steam! </a>
+        </footer>     
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="miSteam.js"></script>
+</body>
+</html>

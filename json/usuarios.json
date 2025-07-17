@@ -1,0 +1,23 @@
+{
+  "usuarios": [
+    {
+      "usuario": "sir",
+      "password": "000",
+      "friendslist": {
+        "friends": [
+          {
+            "steam_user": "Jex",
+            "img": "jex_img.jpg",
+            "steamid": "76561198048218916",
+            "relationship": "friend",
+            "friend_since": 1670536464
+          }
+        ]
+      }
+    }, 
+    {
+      "usuario": "admin",
+      "password": "000"
+    }
+  ]
+}

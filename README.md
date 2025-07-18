@@ -21,25 +21,25 @@ Este proyecto es una simulación de una plataforma similar a **Steam**, desarrol
 ```bash
 /steam/
 │
-├── css/         # Hojas de estilo
+├── css/
 │ ├── amigos.css
 │ ├── index.css
 │ ├── login.css
 │ ├── miSteam.css
-├── img/         # Imágenes del catálogo, iconos de user
-├── js/          # Archivos JavaScript para funcionalidades
+├── img/
+├── js/ 
 │ ├── function.js
-├── json/        # Datos simulados (usuarios, juegos)
+├── json/ 
 │ ├── juegos.json
 │ ├── usuarios.json
-├── src/         # Archivos principales
+├── src/  
 │ ├── amigos.html
 │ ├── amigos.js
 │ ├── login.html
 │ ├── login.js
 │ ├── main.html
 │ ├── miSteam.js
-└── README.md    # Descripción del proyecto
+└── README.md 
 ```
 
 ## 🧪 Funcionalidades destacadas
